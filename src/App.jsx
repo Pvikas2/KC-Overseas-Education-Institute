@@ -19,7 +19,6 @@ function App() {
       <StudentTestimonials />
       <LatestUpdates />
       <NewsletterSubscribe/>
-
     </div>
   )
 }

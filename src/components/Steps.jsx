@@ -106,20 +106,6 @@ export default function Steps() {
 
 
   // Scroll the step track so the active node is centered
-  // useEffect(() => {
-  //   if (!trackRef.current) return;
-  //   const track = trackRef.current;
-  //   const nodes = track.querySelectorAll(".step-node-wrap");
-  //   if (!nodes[active]) return;
-  //   const node = nodes[active];
-  //   const trackWidth = track.offsetWidth;
-  //   const nodeLeft = node.offsetLeft;
-  //   const nodeWidth = node.offsetWidth;
-  //   track.scrollTo({
-  //     left: nodeLeft - trackWidth / 2 + nodeWidth / 2,
-  //     behavior: "smooth",
-  //   });
-  // }, [active]);
 
   useEffect(() => {
   if (!trackRef.current) return;
@@ -143,6 +129,8 @@ export default function Steps() {
     left: target,
     behavior: "smooth",
   });
+
+  console.log("Scrolling track to:", target);
 
 }, [active]);
 

@@ -634,7 +634,6 @@ body {
     font-size: 1.05rem;
   }
 
-  /* Full-width pill button */
   .enquire-btn-services {
     width: 80%;
     padding: 18px 32px;
@@ -667,17 +666,6 @@ body {
     font-size: 0.95rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -723,7 +711,7 @@ body {
 .steps-track {
   display: flex;
   align-items: center;
-  overflow-x: hidden; /* manual scroll disabled */
+  overflow-x: hidden; 
   scroll-behavior: smooth;
   padding: 8px 865px;
 }
@@ -733,6 +721,10 @@ body {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+}
+
+.step-node-wrap:last-of-type {
+    width: 370px;
 }
 
 .step-node {
